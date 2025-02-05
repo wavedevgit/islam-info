@@ -8,7 +8,9 @@ function Category({ category }) {
             <ul>
                 {category.articles.map((article) => (
                     <li>
-                        <a className="cursor-pointer text-green-600 hover:text-green-700">{article.title}</a>
+                        <a href={article.content} target="_blank" className="cursor-pointer text-green-600 hover:text-green-700">
+                            {article.title}
+                        </a>
                     </li>
                 ))}
             </ul>
@@ -23,24 +25,35 @@ function Questions() {
             articles: [
                 {
                     title: 'What is islam?',
+                    content: 'https://github.com/wavedevgit/islam-info/blob/main/articles/islam/what_is_islam.md',
                 },
                 {
                     title: 'How to convert to islam?',
+                    content:
+                        'https://github.com/wavedevgit/islam-info/blob/main/articles/islam/how_to_convert_to_islam.md',
                 },
                 {
                     title: 'What to know if you convert to islam?',
+                    content:
+                        'https://github.com/wavedevgit/islam-info/blob/main/articles/islam/what_to_know_if_you_convert_to_islam.md',
                 },
                 {
                     title: 'What is the noble quran and the sunnah?',
+                    content:
+                        'https://github.com/wavedevgit/islam-info/blob/main/articles/islam/what_is_the_noble_quran_and_the_sunnah.md',
                 },
                 {
                     title: 'What is fiqh?',
+                    content: 'https://github.com/wavedevgit/islam-info/blob/main/articles/islam/what_is_fiqh.md',
                 },
                 {
                     title: 'Five Pillars of Islam (Arkan islam)?',
+                    content:
+                        'https://github.com/wavedevgit/islam-info/blob/main/articles/islam/five_pillars_of_islam.md',
                 },
                 {
                     title: 'Pillars of Faith (Arkan iman)',
+                    content: 'https://github.com/wavedevgit/islam-info/blob/main/articles/islam/five_of_faith.md',
                 },
             ],
         },
@@ -49,12 +62,15 @@ function Questions() {
             articles: [
                 {
                     title: 'What is salat?',
+                    content: 'https://github.com/wavedevgit/islam-info/blob/main/articles/prayers/what_is_salat.md',
                 },
                 {
                     title: 'What is wudu and how to commit wudu?',
+                    content: 'https://github.com/wavedevgit/islam-info/blob/main/articles/prayers/what_is_wudu.md',
                 },
                 {
                     title: 'How to pray salat?',
+                    content: 'https://github.com/wavedevgit/islam-info/blob/main/articles/prayers/how_to_pray_salat.md',
                 },
             ],
         },

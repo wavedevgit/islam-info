@@ -1,0 +1,1 @@
+# Five Pillars of islam (Arkan al islam)
